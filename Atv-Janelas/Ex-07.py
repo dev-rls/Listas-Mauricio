@@ -33,8 +33,8 @@ class LoginWindow(QWidget):
         self.setLayout(layout)
  
     def check_login(self):
-        correct_username = "jamily"
-        correct_password = "senha123"
+        correct_username = "raquel"
+        correct_password = "67638"
  
         username = self.input_username.text()
         password = self.input_password.text()
