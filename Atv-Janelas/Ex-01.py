@@ -1,4 +1,5 @@
-from PySide6.QtWidgets import QApplication,QLabel,QMainWindow
+
+from PySide6.QtWidgets import QApplication, QLabel, QMainWindow
 from PySide6.QtCore import Qt
 import sys
  

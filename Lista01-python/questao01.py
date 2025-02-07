@@ -7,4 +7,3 @@ a = float(input("Digite um nº::"))
 b = float(input("Digite outro nº: "))
 soma = a + b
 print(soma)
-
