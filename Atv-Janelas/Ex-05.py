@@ -6,12 +6,11 @@ from PySide6.QtCore import Qt
 def on_button_click():
     button.hide()
     
-    
     new_button = QPushButton('Outro botão')
     new_button.clicked.connect(on_new_button_click)  
 
     new_image_label = QLabel()
-    new_pixmap = QPixmap(r'C:\Users\suporte\Documents\Code_python\Aula_2025\nova_imagem.jpg')  
+    new_pixmap = QPixmap(r'C:\Users\RaquelSantos\Documents\teste\img2.jfif')  
     if not new_pixmap.isNull():
         new_image_label.setPixmap(new_pixmap)
     else:
@@ -22,7 +21,6 @@ def on_button_click():
     layout.addWidget(new_image_label)
     layout.addWidget(new_button)
 
-  
     window.adjustSize()
 
 def on_new_button_click():
@@ -38,11 +36,11 @@ def main():
 
     layout = QVBoxLayout()
 
-    name_label = QLabel('Eduarda Hisano')
+    name_label = QLabel('Raquel')
     name_label.setAlignment(Qt.AlignCenter)
 
     image_label = QLabel()
-    pixmap = QPixmap(r'C:\Users\suporte\Documents\Code_python\Aula_2025\eduarda.jpg.jpg')
+    pixmap = QPixmap(r'C:\Users\RaquelSantos\Documents\teste\img1.jfif')
     if not pixmap.isNull():
         image_label.setPixmap(pixmap)
     else:
@@ -50,7 +48,6 @@ def main():
 
     image_label.setAlignment(Qt.AlignCenter)
 
-   
     button = QPushButton('Clique aqui')
     button.clicked.connect(on_button_click)
 
@@ -68,5 +65,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-    
+ 
